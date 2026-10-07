@@ -1,0 +1,22 @@
+dht11
++ --> 3v3
+out --> 21
+- --> GND
+
+FC-37
+AO --> 1
+DO --> 4
+VCC --> 3v3
+GND --> GND
+
+bmp280
+SCL --> 9
+SDA --> 8
+VCC --> 3v3
+GND --> GND
+
+bh1750
+SCL --> 9
+SDA --> 8
+VCC --> 3v3
+GND --> GND
