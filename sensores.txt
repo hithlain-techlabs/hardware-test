@@ -20,3 +20,17 @@ SCL --> 9
 SDA --> 8
 VCC --> 3v3
 GND --> GND
+
+
+tudo integrado protoboard
+Sensor,Pino do Módulo,Conexão na Protoboard / ESP32-S3,Função
+Todos os Sensores,VCC / +,Barramento positivo (+) da protoboard → 3V3 da ESP32,Alimentação 3.3V
+Todos os Sensores,GND / -,Barramento negativo (-) da protoboard → GND da ESP32,Terra comum
+DHT11,OUT / DATA,GPIO 21,Leitura digital 1-Wire
+FC-37 (Chuva),AO,GPIO 1,Leitura analógica (ADC1_CH0)
+FC-37 (Chuva),DO (opcional),GPIO 4,Alerta digital de limiar
+BMP280,SDA,GPIO 8 (coluna compartilhada com BH1750),Dados I2C
+BMP280,SCL,GPIO 9 (coluna compartilhada com BH1750),Clock I2C
+BH1750,SDA,GPIO 8 (coluna compartilhada com BMP280),Dados I2C
+BH1750,SCL,GPIO 9 (coluna compartilhada com BMP280),Clock I2C
+
